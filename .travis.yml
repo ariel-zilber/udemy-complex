@@ -17,7 +17,7 @@ after_success:
   - docker build -t cofeecoder/multi-server ./server
   - docker build -t cofeecoder/multi-worker ./worker
   # Log in to the docker CLI
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "PasswdAZN20!$" | docker login -u "cofeecoder" --password-stdin
   # Take those images and push them to docker hub
   - docker push cofeecoder/multi-client
   - docker push cofeecoder/multi-nginx
